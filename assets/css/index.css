@@ -1,5 +1,8 @@
 * {
     font-family: 'Rubik';
+}
+
+:root {
     --color-primary: hsl(231, 69%, 60%);
     --color-danger: hsl(0, 94%, 66%);
     --color-grayblue: hsl(229, 8%, 60%);
@@ -20,10 +23,51 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+.text-silver {
+    color: var(--color-grayblue) !important;
+}
+
+.text-darkblue {
+    color: var(--color-darkblue) !important;
+}
+
 .btn-danger {
     background-color: var(--color-danger) !important;
 }
 
 .btn-primary {
     background-color: var(--color-primary) !important;
+}
+
+.bookmark-intro {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.bookmark-intro button {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.bookmark-intro h3 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.bookmark-intro h1 {
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.blue-round:before {
+    z-index: -9999;
+    position: absolute;
+    display: block;
+    top: 7em;
+    left: 10em;
+    width: 130%;
+    height: 20em;
+    border-radius: 10em;
+    background-color: var(--color-primary);
+    content: "";
 }

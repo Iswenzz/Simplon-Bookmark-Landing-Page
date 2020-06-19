@@ -1,0 +1,29 @@
+* {
+    font-family: 'Rubik';
+    --color-primary: hsl(231, 69%, 60%);
+    --color-danger: hsl(0, 94%, 66%);
+    --color-grayblue: hsl(229, 8%, 60%);
+    --color-darkblue: hsl(229, 31%, 21%);
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-darkblue) !important;
+}
+
+.navbar button {
+    letter-spacing: 0.18em;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.btn-danger {
+    background-color: var(--color-danger) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-primary) !important;
+}

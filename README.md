@@ -18,3 +18,10 @@ Modalités pédagogiques
 * Il faut aussi creer les formes de fond avec du code (carré bleu avec un bord arrondi)
 
 Le TP est à rendre sur Gitlab et Simplonline le vendredi 26 juin au soir.
+
+## Compiling SASS
+Run the following commands to compile SASS files.
+```bash
+npm install -g sass
+sass assets/scss:dist/css
+```

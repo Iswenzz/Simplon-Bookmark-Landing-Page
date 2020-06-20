@@ -1,0 +1,47 @@
+$color-primary: hsl(231, 69%, 60%);
+$color-danger: hsl(0, 94%, 66%);
+$color-grayblue: hsl(229, 8%, 60%);
+$color-darkblue: hsl(229, 31%, 21%);
+
+* {
+	font-family: 'Rubik';
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color-darkblue !important;
+}
+
+.blue-round {
+	&::before {
+		z-index: -9999;
+		position: absolute;
+		display: block;
+		top: 7em;
+		left: 10em;
+		width: 130%;
+		height: 20em;
+		border-radius: 10em;
+		background-color: $color-primary;
+		content: "";
+	}
+}
+
+.text-silver {
+	color: $color-grayblue !important;
+}
+
+.text-darkblue {
+	color: $color-darkblue !important;
+}
+
+.btn-danger {
+	background-color: $color-danger !important;
+}
+
+.btn-primary {
+	background-color: $color-primary !important;
+}

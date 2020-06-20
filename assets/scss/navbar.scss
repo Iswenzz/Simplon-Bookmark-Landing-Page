@@ -1,0 +1,11 @@
+.navbar {
+	button {
+		letter-spacing: 0.18em;
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+
+	#{&}-toggler {
+		border: 0 !important;
+	}
+}

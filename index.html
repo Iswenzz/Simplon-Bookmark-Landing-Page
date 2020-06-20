@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bookmark Landing Page</title>
-	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="stylesheet" href="dist/css/common.css">
+	<link rel="stylesheet" href="dist/css/navbar.css">
+	<link rel="stylesheet" href="dist/css/index.css">
 	<!-- Bootstrap CSS & Google Font & Font Awesome -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js" integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
@@ -15,15 +17,15 @@
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-white mt-5">
 			<div class="container">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/images/logo-bookmark.svg" class="d-inline-block align-top" 
+					title="Logo Bookmark" alt="Logo Bookmark">
+				</a>
+				<button type="button" class="navbar-toggler" data-toggle="modal" data-target="#navbarToggler">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<section class="collapse navbar-collapse" id="navbarToggler">
-					<a class="navbar-brand" href="index.html">
-						<img src="assets/images/logo-bookmark.svg" class="d-inline-block align-top" 
-						title="Logo Bookmark" alt="Logo Bookmark">
-					</a>
-					<section class="navbar-nav mr-auto mt-2 mt-lg-0"></section>
+				<section class="collapse navbar-collapse">
+					<section class="navbar-nav mr-auto"></section>
 					<section>
 						<button class="btn px-4 py-2">FEATURES</button>
 						<button class="btn px-4 py-2">PRICING</button>
@@ -33,6 +35,26 @@
 				</section>
 			</div>
 		</nav>
+		<!-- NavBar Mobile Modal -->
+		<div class="modal fade" id="navbarToggler" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+					...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</header>
 
 	<!-- Content -->

@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blue-round {
-	&::before {
+	&:before {
 		z-index: -9999;
 		position: absolute;
 		display: block;
@@ -38,10 +38,45 @@ h1, h2, h3, h4, h5, h6 {
 	color: $color-darkblue !important;
 }
 
+@mixin btn-color($color) {
+	background-color: $color !important;
+	border-width: 2px !important;
+	box-shadow: 0 .3rem 0.2rem rgba(0, 0, 0, .1) !important;
+
+	&:active, &:focus, &:visited, &:hover {
+		border-width: 2px !important;
+		border-color: $color !important;
+		background-color: white !important;
+		color: $color !important;
+		box-shadow: 0 .3rem 0.2rem rgba(0, 0, 0, .1) !important;
+	}
+}
+
+@mixin btn-color-label($color) {
+	@include btn-color(transparent);
+	border: 0 !important;
+	box-shadow: none !important;
+
+	&:active, &:focus, &:visited, &:hover {
+		color: $color !important;
+		border: 0 !important;
+		box-shadow: none !important;
+	}
+}
+
 .btn-danger {
-	background-color: $color-danger !important;
+	@include btn-color($color-danger);
 }
 
 .btn-primary {
-	background-color: $color-primary !important;
+	@include btn-color($color-primary);
+}
+
+.btn-white {
+	@include btn-color(dimgray);
+	background-color: whitesmoke !important;
+}
+
+.btn-danger-label {
+	@include btn-color-label($color-danger);
 }

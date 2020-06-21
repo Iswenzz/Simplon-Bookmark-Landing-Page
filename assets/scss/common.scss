@@ -4,7 +4,7 @@ $color-grayblue: hsl(229, 8%, 60%);
 $color-darkblue: hsl(229, 31%, 21%);
 
 $queries: (
-	desktop: 'min-device-width: 1224px',
+	desktop: 'min-width: 1224px',
 	tablet_mobile: 'max-device-width: 1224px',
 	portrait: 'orientation: portrait',
 	retina: 'min-resolution: 2dppx',
@@ -37,37 +37,48 @@ hr {
 }
 
 .b-sm {
-	visibility: hidden;
+	display: none;
 
 	@include media(tablet_mobile, portrait) {
-		visibility: visible;
+		display: block;
 	}
 }
 
 .b-lg {
-	visibility: hidden;
+	display: none;
 
 	@include media(desktop) {
-		visibility: visible;
+		display: block;
 	}
 }
 
-.blue-round {
-	&:before {
-		z-index: -9999;
-		position: absolute;
-		display: block;
-		top: 7em;
-		left: 10em;
-		width: 200%;
-		height: 20em;
-		border-radius: 10em;
-		background-color: $color-primary;
-		content: "";
+@mixin blue-round {
+	z-index: -9999;
+	position: absolute;
+	display: block;
+	top: 7em;
+	width: 200%;
+	height: 20em;
+	border-radius: 10em;
+	background-color: $color-primary;
+	content: "";
 
-		@include media(tablet_mobile) {
-			height: 10em;
-		}
+	@include media(tablet_mobile) {
+		height: 10em;
+	}
+}
+
+.blue-round-right {
+	&:before {
+		@include blue-round;
+		left: 10em;
+	}
+}
+
+.blue-round-left {
+	&:before {
+		@include blue-round;
+		right: 10em;
 	}
 }
 

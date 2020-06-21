@@ -5,7 +5,7 @@
 		font-size: 3em;
 		font-weight: 900;
 
-		@include media(tablet_mobile, portrait) {
+		@include media(tablet_mobile) {
 			font-size: 2em;
 		}
 	}
@@ -16,19 +16,21 @@
 
 	h3 {
 		font-size: 1.2em;
-		line-height: 1.5em;
+		line-height: 1.3em;
+		color: silver !important;
 	}
 
 	h4 {
 		font-size: 1em;
-		line-height: 1.5em;
+		line-height: 1.3em;
+		color: silver !important;
 	}
 
 	header {
 		h3 {
 			width: 50%;
 
-			@include media(tablet_mobile, portrait) {
+			@include media(tablet_mobile) {
 				width: 100%;
 			}
 		}
@@ -38,7 +40,7 @@
 		}
 	}
 
-	@include media(tablet_mobile, portrait) {
+	@include media(tablet_mobile) {
 		text-align: center;
 		
 		.bookmark-intro-buttons {
@@ -49,7 +51,7 @@
 
 .features {
 	#{&}-row {
-		width: 75%;
+		width: 80%;
 
 		button {
 			padding: 1em;
@@ -61,7 +63,7 @@
 			border-bottom: solid 3px transparent;
 			width: 100%;
 
-			@include media(tablet_mobile, portrait) {
+			@include media(tablet_mobile) {
 				width: 50%;
 			}
 
@@ -73,6 +75,10 @@
 				border-bottom: solid 3px $color-danger !important;
 				box-shadow: none !important;
 				font-weight: bold;
+			}
+
+			&:hover {
+				color: $color-danger !important;
 			}
 		}
 	}

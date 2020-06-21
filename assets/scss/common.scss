@@ -39,7 +39,7 @@ hr {
 .b-sm {
 	display: none;
 
-	@include media(tablet_mobile, portrait) {
+	@include media(tablet_mobile) {
 		display: block;
 	}
 }
@@ -126,6 +126,7 @@ hr {
 
 .btn-white {
 	@include btn-color(dimgray);
+	color: dimgray !important;
 	background-color: whitesmoke !important;
 }
 

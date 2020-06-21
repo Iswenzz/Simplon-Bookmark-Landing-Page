@@ -44,6 +44,10 @@
 	opacity: 0.9;
 	border: 0;
 
+	hr {
+		background-color: rgba(120, 120, 180, 0.4);
+	}
+
 	button {
 		background-color: transparent;
 		border: 0;
@@ -58,8 +62,6 @@
 
 	#{&}-button {
 		@include modal-button;
-		border-top: 1px solid rgba(120, 120, 180, 0.4);
-		border-bottom: 1px solid rgba(120, 120, 180, 0.4);
 		border-radius: 0;
 	}
 

@@ -3,6 +3,22 @@ $color-danger: hsl(0, 94%, 66%);
 $color-grayblue: hsl(229, 8%, 60%);
 $color-darkblue: hsl(229, 31%, 21%);
 
+$queries: (
+	desktop: 'min-device-width: 1224px',
+	tablet_mobile: 'max-device-width: 1224px',
+	portrait: 'orientation: portrait',
+	retina: 'min-resolution: 2dppx',
+	big: 'min-device-width: 1824px'
+);
+
+@mixin media($keys...) {
+    @each $key in $keys {
+		@media (map-get($queries, $key)) {
+			@content;
+		}
+	}
+}
+
 * {
 	font-family: 'Rubik';
 }

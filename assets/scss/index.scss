@@ -1,6 +1,16 @@
+@import './common.scss';
+
 .bookmark-intro {
 	padding-top: 5em;
 	padding-bottom: 5em;
+
+	@include media(tablet_mobile, portrait) {
+		text-align: center;
+		
+		#{&}-buttons {
+			justify-content: center;
+		}
+	}
 
 	button {
 		font-size: 0.8em;
@@ -10,6 +20,10 @@
 	h1 {
 		font-size: 3em;
 		font-weight: 900;
+
+		@include media(tablet_mobile, portrait) {
+			font-size: 2em;
+		}
 	}
 
 	h3 {

@@ -1,5 +1,72 @@
 @import './common.scss';
 
+.bookmark-intro, .features {
+	h1 {
+		font-size: 3em;
+		font-weight: 900;
+
+		@include media(tablet_mobile, portrait) {
+			font-size: 2em;
+		}
+	}
+
+	h3 {
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+}
+
+.features {
+	button {
+		width: 100%;
+	}
+
+	header {
+		h2 {
+			font-weight: 900;
+		}
+
+		h3 {
+			width: 50%;
+
+			@include media(tablet_mobile, portrait) {
+				width: 100%;
+			}
+		}
+	}
+
+	#{&}-row {
+		width: 75%;
+
+		button {
+			padding: 1em;
+			color: $color-grayblue;
+			background-color: transparent;
+			border: 0;
+			border-radius: 0;
+			box-shadow: none;
+			border-bottom: solid 3px transparent;
+
+			@include media(tablet_mobile, portrait) {
+				width: 50%;
+				align-self: center;
+				justify-self: center;
+				justify-content: center;
+			}
+
+			&:active, &:visited, &:focus {
+				color: $color-grayblue !important;
+				background-color: transparent !important;
+				border: 0 !important;
+				border-radius: 0 !important;
+				border-bottom: solid 3px $color-danger !important;
+				box-shadow: none !important;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
 .bookmark-intro {
 	padding-top: 5em;
 	padding-bottom: 5em;
@@ -15,19 +82,5 @@
 	button {
 		font-size: 0.8em;
 		font-weight: bold;
-	}
-
-	h1 {
-		font-size: 3em;
-		font-weight: 900;
-
-		@include media(tablet_mobile, portrait) {
-			font-size: 2em;
-		}
-	}
-
-	h3 {
-		font-size: 1.2em;
-		line-height: 1.5em;
 	}
 }

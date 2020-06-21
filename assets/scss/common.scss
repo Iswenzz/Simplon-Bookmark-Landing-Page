@@ -36,6 +36,22 @@ hr {
 	margin: 0 !important;
 }
 
+.b-sm {
+	visibility: hidden;
+
+	@include media(tablet_mobile, portrait) {
+		visibility: visible;
+	}
+}
+
+.b-lg {
+	visibility: hidden;
+
+	@include media(desktop) {
+		visibility: visible;
+	}
+}
+
 .blue-round {
 	&:before {
 		z-index: -9999;

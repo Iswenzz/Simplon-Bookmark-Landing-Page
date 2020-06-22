@@ -1,6 +1,6 @@
 @import './common.scss';
 
-.bookmark-intro, .features, .extension {
+.bookmark-intro, .features, .extension, .faq {
 	h1 {
 		font-size: 3em;
 		font-weight: 900;
@@ -120,6 +120,35 @@
 	
 		button {
 			width: 80%;
+		}
+	}
+}
+
+.faq {
+	#{&}-accordion {
+		width: 50%;
+
+		button {
+			img {
+				transition: 0.4s;
+			}
+
+			&:active, &:not(.collapsed) {
+				img {
+					transform: rotate(180deg);
+					filter: hue-rotate(120deg);
+				}
+			}
+		}
+
+		div {
+			background-color: white;
+			border: 0;
+		}
+
+		@include media(tablet_mobile) {
+			width: 100%;
+			text-align: initial !important;
 		}
 	}
 }

@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="dist/css/common.css">
 	<link rel="stylesheet" href="dist/css/navbar.css">
 	<link rel="stylesheet" href="dist/css/index.css">
-	<!-- Bootstrap CSS & Google Font & Font Awesome -->
+	<!-- Bootstrap CSS & Google Font & Font Awesome & AnimateCSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js" integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -85,10 +86,10 @@
 		<!-- Simple Bookmark Intro -->
 		<section class="container bookmark-intro">
 			<div class="row">
-				<section class="col-md-6 order-md-1 py-3 blue-round-right">
+				<section class="col-md-6 order-md-1 py-3 blue-round-right animate__animated animate__fadeInRight">
 					<img class="img-fluid" src="assets/images/illustration-hero.svg">
 				</section>
-				<section class="col-md-6 mt-5 py-3">
+				<section class="col-md-6 mt-5 py-3 animate__animated animate__fadeInLeft">
 					<h1>A Simple Bookmark Manager</h1>
 					<h3 class="my-4">
 						A clean and simple interface to organize your favourite websites. 
@@ -147,7 +148,7 @@
 					</div>
 				</div>
 			</section>
-		</article>
+		</article>	
 
 		<article class="container extension py-5">
 			<header class="py-5">
@@ -157,6 +158,37 @@
 					favourite you'd like us to prioritize.
 				</h3>
 			</header>
+			<section class="container browser justify-content-center">
+				<div class="row browser-row mx-auto">
+					<div class="col-md-4 col-sm-12 my-3">
+						<div class="browser-card mx-auto d-flex flex-column jutify-content-center align-items-center">
+							<img class="my-4 pt-3 img-fluid" height="110" width="110" alt="chrome" title="Chrome" src="assets/images/logo-chrome.svg" />
+							<h3 class="my-2">Add to Chrome</h3>
+							<h4>Minimum version 62</h4>
+							<img class="img-fluid my-3 mt-5" alt="dots img" src="assets/images/bg-dots.svg" />
+							<button type="button" class="btn btn-primary p-2 my-4">Add & Install Extension</button>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 my-3">
+						<div class="browser-card mx-auto d-flex flex-column jutify-content-center align-items-center">
+							<img class="my-4 pt-3 img-fluid" height="110" width="110" alt="firefox" title="Firefox" src="assets/images/logo-firefox.svg" />
+							<h3 class="my-2">Add to Firefox</h3>
+							<h4>Minimum version 62</h4>
+							<img class="img-fluid my-3 mt-5" alt="dots img" src="assets/images/bg-dots.svg" />
+							<button type="button" class="btn btn-primary p-2 my-4">Add & Install Extension</button>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 my-3">
+						<div class="browser-card mx-auto d-flex flex-column jutify-content-center align-items-center">
+							<img class="my-4 pt-3 img-fluid" height="110" width="110" alt="opera" title="Opera" src="assets/images/logo-opera.svg" />
+							<h3 class="my-2">Add to Opera</h3>
+							<h4>Minimum version 62</h4>
+							<img class="img-fluid my-3 mt-5" alt="dots img" src="assets/images/bg-dots.svg" />
+							<button type="button" class="btn btn-primary p-2 my-4">Add & Install Extension</button>
+						</div>
+					</div>
+				</div>
+			</section>
 		</article>
 	</main>
 

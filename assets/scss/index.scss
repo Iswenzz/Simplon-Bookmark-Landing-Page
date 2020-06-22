@@ -93,3 +93,33 @@
 		font-weight: bold;
 	}
 }
+
+.browser {
+	#{&}-row {
+		min-height: 30em;
+		
+		div {
+			&:nth-child(1) { align-self: start; }
+			&:nth-child(2) { align-self: center; }
+			&:nth-child(3) { align-self: end; }
+
+			@include media(tablet_mobile) {
+				align-items: center !important;
+			}
+		}
+	}
+
+	#{&}-card {
+		border-radius: 1.5em;
+		width: 85%;
+		box-shadow: 0 1rem 1rem rgba(0,0,0,.1) !important;
+	
+		h3 {
+			color: $color-darkblue !important;
+		}
+	
+		button {
+			width: 80%;
+		}
+	}
+}

@@ -40,7 +40,7 @@
 		}
 	}
 
-	@include media(tablet_mobile) {
+	@include media(tablet_mobile, portrait) {
 		text-align: center;
 		
 		.bookmark-intro-buttons {
@@ -63,7 +63,7 @@
 			border-bottom: solid 3px transparent;
 			width: 100%;
 
-			@include media(tablet_mobile) {
+			@include media(tablet_mobile, portrait) {
 				width: 50%;
 			}
 
@@ -103,7 +103,7 @@
 			&:nth-child(2) { align-self: center; }
 			&:nth-child(3) { align-self: end; }
 
-			@include media(tablet_mobile) {
+			@include media(tablet_mobile, portrait) {
 				align-items: center;
 			}
 		}
@@ -146,7 +146,7 @@
 			border: 0;
 		}
 
-		@include media(tablet_mobile) {
+		@include media(tablet_mobile, portrait) {
 			width: 100%;
 			text-align: initial;
 		}

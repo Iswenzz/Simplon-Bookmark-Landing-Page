@@ -1,31 +1,43 @@
 @import './common.scss';
 
 .bookmark-intro, .features, .extension, .faq {
+	// Font Size
 	h1 {
-		font-size: 3em;
-		font-weight: 900;
+		font-size: 2.5em;
 
 		@include media(tablet_mobile) {
-			font-size: 2em;
+			font-size: 1.7em;
 		}
 	}
 
 	h2 {
+		font-size: 2em;
+
+		@include media(tablet_mobile) {
+			font-size: 1.5em;
+		}
+	}
+
+	h1, h2 {
+		color: $color-darkblue;
 		font-weight: 900;
 	}
 
-	h3 {
-		font-size: 1.2em;
-		line-height: 1.3em;
-		color: silver;
-	}
-
-	h4 {
+	h3, h4 {
 		font-size: 1em;
-		line-height: 1.3em;
+		line-height: 1.5em;
 		color: silver;
+
+		@include media(tablet_mobile) {
+			font-size: 0.9em;
+		}
 	}
 
+	button {
+		font-size: 1em;
+	}
+
+	// text headers
 	header {
 		h3 {
 			width: 50%;
@@ -96,7 +108,7 @@
 
 .browser {
 	#{&}-row {
-		min-height: 30em;
+		min-height: 33em;
 		
 		div {
 			&:nth-child(1) { align-self: start; }
@@ -129,14 +141,14 @@
 		width: 50%;
 
 		button {
-			img {
+			svg {
 				transition: 0.4s;
 			}
 
 			&:active, &:not(.collapsed) {
-				img {
+				svg {
 					transform: rotate(180deg);
-					filter: hue-rotate(120deg);
+					fill: $color-danger;
 				}
 			}
 		}

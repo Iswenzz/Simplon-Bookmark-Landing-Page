@@ -20,7 +20,7 @@
 @mixin no-outline {
 	&:active, &:visited, &:hover, &:focus {
 		box-shadow: none !important;
-		border: 0 !important;
+		border: 0;
 		background-color: transparent !important;
 		outline: none !important;
 	}
@@ -35,7 +35,7 @@
 
 	#{&}-toggler {
 		@include no-outline;
-		border: 0 !important;
+		border: 0;
 	}
 }
 
@@ -70,8 +70,8 @@
 		border: 2px solid white;
 
 		&:active, &:visited, &:hover, &:focus {
-			border: 2px solid silver !important;
-			color: silver !important;
+			border: 2px solid silver;
+			color: silver;
 		}
 	}
 

@@ -17,13 +17,13 @@
 	h3 {
 		font-size: 1.2em;
 		line-height: 1.3em;
-		color: silver !important;
+		color: silver;
 	}
 
 	h4 {
 		font-size: 1em;
 		line-height: 1.3em;
-		color: silver !important;
+		color: silver;
 	}
 
 	header {
@@ -74,7 +74,7 @@
 				border-radius: 0 !important;
 				border-bottom: solid 3px $color-danger !important;
 				box-shadow: none !important;
-				font-weight: bold;
+				font-weight: 500;
 			}
 
 			&:hover {
@@ -104,7 +104,7 @@
 			&:nth-child(3) { align-self: end; }
 
 			@include media(tablet_mobile) {
-				align-items: center !important;
+				align-items: center;
 			}
 		}
 	}
@@ -112,10 +112,10 @@
 	#{&}-card {
 		border-radius: 1.5em;
 		width: 85%;
-		box-shadow: 0 1rem 1rem rgba(0,0,0,.1) !important;
+		box-shadow: 0 1rem 1rem rgba(0,0,0,.1);
 	
 		h3 {
-			color: $color-darkblue !important;
+			color: $color-darkblue;
 		}
 	
 		button {
@@ -148,7 +148,7 @@
 
 		@include media(tablet_mobile) {
 			width: 100%;
-			text-align: initial !important;
+			text-align: initial;
 		}
 	}
 }

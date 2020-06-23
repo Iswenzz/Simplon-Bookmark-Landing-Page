@@ -1,7 +1,7 @@
 @import './common.scss';
 
 .bookmark-intro, .features, .extension, .faq {
-	// Font Size
+	// font sizes
 	h1 {
 		font-size: 2.5em;
 
@@ -11,7 +11,7 @@
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.8em;
 
 		@include media(tablet_mobile) {
 			font-size: 1.5em;
@@ -34,7 +34,7 @@
 	}
 
 	button {
-		font-size: 1em;
+		white-space: nowrap !important;
 	}
 
 	// text headers
@@ -52,12 +52,9 @@
 		}
 	}
 
+	// center texts
 	@include media(tablet_mobile, portrait) {
 		text-align: center;
-		
-		.bookmark-intro-buttons {
-			justify-content: center;
-		}
 	}
 }
 
@@ -72,21 +69,31 @@
 			border: 0;
 			border-radius: 0;
 			box-shadow: none;
-			border-bottom: solid 3px transparent;
 			width: 100%;
-
-			@include media(tablet_mobile, portrait) {
-				width: 50%;
-			}
 
 			&:active, &:visited, &:focus {
 				color: $color-grayblue !important;
 				background-color: transparent !important;
 				border: 0 !important;
 				border-radius: 0 !important;
-				border-bottom: solid 3px $color-danger !important;
 				box-shadow: none !important;
 				font-weight: 500;
+
+				// red outline
+				&:after {
+					position: absolute;
+					height: 4px;
+					width: 100%;
+					left: 0;
+					bottom: 0;
+					background-color: $color-danger;
+					content: "";
+
+					@include media(tablet_mobile, portrait) {
+						width: 50%;
+						left: 25%;
+					}
+				}
 			}
 
 			&:hover {
@@ -104,12 +111,24 @@
 		font-size: 0.8em;
 		font-weight: bold;
 	}
+
+	#{&}-buttons {
+		@include media(tablet_mobile, portrait) {
+			justify-content: center;
+
+			button {
+				margin: 0.3em !important;
+				padding: 0.8em !important;
+			}
+		}
+	}
 }
 
 .browser {
 	#{&}-row {
 		min-height: 33em;
 		
+		// cascade effect
 		div {
 			&:nth-child(1) { align-self: start; }
 			&:nth-child(2) { align-self: center; }
@@ -132,6 +151,7 @@
 	
 		button {
 			width: 80%;
+			font-size: 0.9em;
 		}
 	}
 }
@@ -145,10 +165,13 @@
 				transition: 0.4s;
 			}
 
+			// accordion arrow
 			&:active, &:not(.collapsed) {
 				svg {
 					transform: rotate(180deg);
-					fill: $color-danger;
+					path {
+						stroke: $color-danger;
+					}
 				}
 			}
 		}

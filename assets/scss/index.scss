@@ -117,17 +117,6 @@
 .browser {
 	#{&}-row {
 		min-height: 33em;
-		
-		// cascade effect
-		div {
-			&:nth-child(1) { align-self: start; }
-			&:nth-child(2) { align-self: center; }
-			&:nth-child(3) { align-self: end; }
-
-			@include media(tablet_mobile, portrait) {
-				align-items: center;
-			}
-		}
 	}
 
 	#{&}-card {

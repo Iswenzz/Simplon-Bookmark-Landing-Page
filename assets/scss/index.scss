@@ -20,7 +20,7 @@
 
 	h1, h2 {
 		color: $color-darkblue;
-		font-weight: 900;
+		font-weight: 500;
 	}
 
 	h3, h4 {
@@ -61,8 +61,18 @@
 }
 
 .features {
+	nav {
+		.active {
+			@include red-outline-bottom;
+			button {
+				font-weight: 500 !important;
+			}
+		}
+	}
+
 	#{&}-row {
-		width: 85%;
+		list-style: none;
+		width: 70%;
 
 		button {
 			padding: 1em;
@@ -79,23 +89,6 @@
 				border: 0 !important;
 				border-radius: 0 !important;
 				box-shadow: none !important;
-				font-weight: 500;
-
-				// red outline
-				&:after {
-					position: absolute;
-					height: 4px;
-					width: 100%;
-					left: 0;
-					bottom: 0;
-					background-color: $color-danger;
-					content: "";
-
-					@include media(tablet_mobile, portrait) {
-						width: 50%;
-						left: 25%;
-					}
-				}
 			}
 
 			&:hover {

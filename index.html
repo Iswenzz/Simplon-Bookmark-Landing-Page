@@ -113,44 +113,97 @@
 					Your bookmarks sync between your devices so you can access them on the go.
 				</h3>
 			</header>
-			<section class="row features-row mx-auto my-5">
-				<div class="col-md-4 col-sm-12 p-0">
+			<!-- Tabs -->
+			<nav class="nav row features-row mx-auto mt-5" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link col-md-4 col-sm-12 p-0 active" id="features-1-tab" data-toggle="tab" 
+				href="#features-1" role="tab" aria-controls="features-1" aria-selected="true">
 					<hr class="b-sm"/>
 					<div class="d-flex justify-content-center">
-						<button id="feature-1" type="button" class="btn btn-secondary text-center">Simple Bookmarking</button>
+						<button id="feature-1" type="button" class="nav-link btn btn-secondary text-center">
+							Simple Bookmarking
+						</button>
 					</div>
 					<hr/>
-				</div>
-				<div class="col-md-4 col-sm-12 p-0">
+				</a>
+				<a class="nav-item nav-link col-md-4 col-sm-12 p-0" id="features-2-tab" data-toggle="tab" 
+				href="#features-2" role="tab" aria-controls="features-2" aria-selected="false">
 					<div class="d-flex justify-content-center">
-						<button id="feature-2" type="button" class="btn btn-secondary">Speedy Searching</button>
+						<button id="feature-2" type="button" class="nav-link btn btn-secondary">
+							Speedy Searching
+						</button>
 					</div>
 					<hr/>
-				</div>
-				<div class="col-md-4 col-sm-12 p-0">
+				</a>
+				<a class="nav-item nav-link col-md-4 col-sm-12 p-0" id="features-3-tab" data-toggle="tab" 
+				href="#features-3" role="tab" aria-controls="features-3" aria-selected="false">
 					<div class="d-flex justify-content-center">
-						<button id="feature-3" type="button" class="btn btn-secondary">Easy Sharing</button>
+						<button id="feature-3" type="button" class="nav-link btn btn-secondary">
+							Easy Sharing
+						</button>
 					</div>
 					<hr/>
+				</a>
+			</nav>
+			<!-- Content -->
+			<section class="tab-content" id="nav-tabContent">
+				<div class="tab-pane animate__animated animate__flipInX show active" id="features-1" 
+				role="tabpanel" aria-labelledby="features-1-tab">
+					<div class="row my-5">
+						<div class="col-md-7 py-3 blue-round-left">
+							<img class="img-fluid" src="assets/images/illustration-features-tab-1.svg">
+						</div>
+						<div class="col-md-5 mt-5 py-5">
+							<h2>Bookmark in one click</h2>
+							<h4 class="my-4">
+								Organize your bookmarks however you like. Our simple drag-and-drop interface
+								gives you complete control over how you manage your favourite sites.
+							</h4>
+							<div class="b-lg">
+								<button class="btn btn-primary mr-3 my-3 p-2 px-4">More Info</button>
+							</div>
+						</div>
+					</div>
 				</div>
-			</section>
-			<section class="row my-5">
-				<div class="col-md-7 py-3 blue-round-left">
-					<img class="img-fluid" src="assets/images/illustration-features-tab-1.svg">
+				<div class="tab-pane animate__animated animate__lightSpeedInRight" id="features-2" 
+				role="tabpanel" aria-labelledby="features-2-tab">
+					<div class="row my-5">
+						<div class="col-md-7 py-3 blue-round-left">
+							<img class="img-fluid" src="assets/images/illustration-features-tab-2.svg">
+						</div>
+						<div class="col-md-5 mt-5 py-5">
+							<h2>Intelligent search</h2>
+							<h4 class="my-4">
+								Our powerful search feature will help you find saved sites in no time at all. 
+								No need to trawl through all of your bookmarks.
+							</h4>
+							<div class="b-lg">
+								<button class="btn btn-primary mr-3 my-3 p-2 px-4">More Info</button>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-5 mt-5 py-5">
-					<h2>Bookmark in one click</h2>
-					<h4 class="my-4">
-						Organize your bookmarks however you like. Our simple drag-and-drop interface
-						gives you complete control over how you manage your favourite sites.
-					</h4>
-					<div class="b-lg">
-						<button class="btn btn-primary mr-3 my-3 p-2 px-4">More Info</button>
+				<div class="tab-pane animate__animated animate__zoomIn" id="features-3" 
+				role="tabpanel" aria-labelledby="features-3-tab">
+					<div class="row my-5">
+						<div class="col-md-7 py-3 blue-round-left">
+							<img class="img-fluid" src="assets/images/illustration-features-tab-3.svg">
+						</div>
+						<div class="col-md-5 mt-5 py-5">
+							<h2>Share your bookmarks</h2>
+							<h4 class="my-4">
+								Easily share your bookmarks and collections with others. Create a shareable link that 
+								you can send at the click of a button.
+							</h4>
+							<div class="b-lg">
+								<button class="btn btn-primary mr-3 my-3 p-2 px-4">More Info</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 		</article>	
 
+		<!-- Extensions -->
 		<article class="container extension py-5">
 			<header class="py-5">
 				<h2 class="text-center">Download the extension</h2>

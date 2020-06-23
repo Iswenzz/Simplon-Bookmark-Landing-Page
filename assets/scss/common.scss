@@ -59,7 +59,7 @@ hr {
 	position: absolute;
 	display: block;
 	top: 7em;
-	width: 200%;
+	width: 150%;
 	height: 18em;
 	border-radius: 10em;
 	background-color: $color-primary;
@@ -81,6 +81,24 @@ hr {
 	&:before {
 		@include blue-round;
 		right: 10em;
+	}
+}
+
+// red outline bottom
+@mixin red-outline-bottom {
+	&:after {
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		background-color: $color-danger;
+		content: "";
+
+		@include media(tablet_mobile, portrait) {
+			width: 50%;
+			left: 25%;
+		}
 	}
 }
 

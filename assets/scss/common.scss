@@ -3,6 +3,7 @@ $color-danger: hsl(0, 94%, 66%);
 $color-grayblue: hsl(229, 8%, 60%);
 $color-darkblue: hsl(229, 31%, 21%);
 
+// responsive queries
 $queries: (
 	desktop: 'min-width: 1224px',
 	tablet_mobile: 'max-device-width: 1224px',
@@ -19,21 +20,7 @@ $queries: (
 	}
 }
 
-html, body {
-	overflow-x: hidden;
-	font-size: 18px;
-	font-family: 'Rubik';
-}
-
-h1, h2, h3, h4, h5, h6 {
-	color: $color-darkblue;
-}
-
-hr {
-	background-color: solid 1px rgba(180, 180, 220, 0.6);
-	margin: 0;
-}
-
+// breakpoints to hide elements
 .b-sm {
 	display: none;
 
@@ -50,6 +37,23 @@ hr {
 	}
 }
 
+// default font family & font size & text/hr colors
+html, body {
+	overflow-x: hidden;
+	font-size: 18px;
+	font-family: 'Rubik';
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color-darkblue;
+}
+
+hr {
+	background-color: solid 1px rgba(180, 180, 220, 0.6);
+	margin: 0;
+}
+
+// blue round effect behind elements
 @mixin blue-round {
 	z-index: -9999;
 	position: absolute;
@@ -80,6 +84,7 @@ hr {
 	}
 }
 
+// bootstrap buttons & text classes
 .text-silver {
 	color: $color-grayblue;
 }

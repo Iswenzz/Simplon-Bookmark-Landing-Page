@@ -35,6 +35,8 @@
 
 	button {
 		white-space: nowrap !important;
+		font-size: 0.9em;
+		font-weight: 400;
 	}
 
 	// text headers
@@ -107,11 +109,6 @@
 	padding-top: 5em;
 	padding-bottom: 5em;
 
-	button {
-		font-size: 0.8em;
-		font-weight: bold;
-	}
-
 	#{&}-buttons {
 		@include media(tablet_mobile, portrait) {
 			justify-content: center;
@@ -151,7 +148,6 @@
 	
 		button {
 			width: 80%;
-			font-size: 0.9em;
 		}
 	}
 }

@@ -43,10 +43,6 @@
 	#{&}-navbar {
 		background-color: $color-darkblue;
 
-		a {
-			font-size: 0.8em;
-		}
-	
 		.navbar-brand {
 			path {
 				fill: white;
@@ -55,7 +51,9 @@
 
 		button {
 			color: rgba(220, 220, 220, 0.856);
-			font-size: 0.65em;
+			font-size: 0.7em;
+			letter-spacing: 0.2em;
+			text-align: center;
 		}
 	}
 }

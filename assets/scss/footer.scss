@@ -23,7 +23,7 @@
 		font-weight: 500;
 	}
 
-	section {
+	#{&}-contact {
 		width: 35%;
 
 		input, button {
@@ -42,6 +42,10 @@
 
 	#{&}-navbar {
 		background-color: $color-darkblue;
+
+		a {
+			font-size: 0.8em;
+		}
 	
 		.navbar-brand {
 			path {

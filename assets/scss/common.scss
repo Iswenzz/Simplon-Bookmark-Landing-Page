@@ -127,10 +127,12 @@ hr {
 
 @mixin btn-color-label($color) {
 	@include btn-color(transparent);
+	background-color: transparent;
 	border: 0;
 	box-shadow: none;
 
 	&:active, &:focus, &:visited, &:hover {
+		background-color: transparent !important;
 		color: $color !important;
 		border: 0;
 		box-shadow: none;

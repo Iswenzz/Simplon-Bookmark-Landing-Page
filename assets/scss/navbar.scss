@@ -4,7 +4,6 @@
 	width: 100%;
 	color: white;
 	letter-spacing: 0.18em;
-	font-size: 1.2em;
 	border-color: rgba(120, 120, 180, 0.4);
 	background-color: transparent;
 	border: 0;
@@ -49,8 +48,24 @@
 	}
 
 	button {
+		font-size: 1em;
 		background-color: transparent;
 		border: 0;
+	}
+
+	#{&}-row {
+		@include media(tablet_mobile) {
+			button {
+				font-size: 0.7em;
+			}
+
+			@include media(portrait) {
+				button {
+					font-size: 1em;
+					margin: 0.7em 0 0.7em 0;
+				}
+			}
+		}
 	}
 
 	#{&}-content {
@@ -58,6 +73,20 @@
 		height: 100%;
 		background-color: transparent;
 		border: 0;
+		padding-top: 1em;
+
+		svg {
+			circle, path {
+				fill: white;
+			}
+			circle + path {
+				fill: $color-darkblue;
+			}
+		}
+
+		@include media(portrait) {
+			padding-top: 4em !important;
+		}
 	}
 
 	#{&}-button {
@@ -77,9 +106,5 @@
 
 	#{&}-button-close {
 		@include no-outline;
-	}
-
-	#{&}-logo {
-		filter: invert(100) grayscale(100) brightness(2);
 	}
 }

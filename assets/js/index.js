@@ -1,6 +1,9 @@
 'use strict';
 
-let waypoints = [
+/**
+ * Animations map
+ */
+const waypoints = [
 	{
 		query: '#bookmark-intro-right', 
 		classes: 'animate__animated animate__fadeInRight',

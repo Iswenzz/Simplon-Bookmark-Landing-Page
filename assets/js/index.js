@@ -12,8 +12,18 @@ let waypoints = [
 		offset: '50%'
 	},
 	{
-		query: '#browser-section', 
-		classes: 'animate__animated animate__flipInX',
+		query: '#browser-1', 
+		classes: 'animate__animated animate__fadeInUp',
+		offset: '50%'
+	},
+	{
+		query: '#browser-2', 
+		classes: 'animate__animated animate__fadeInUp',
+		offset: '50%'
+	},
+	{
+		query: '#browser-3', 
+		classes: 'animate__animated animate__fadeInUp',
 		offset: '50%'
 	},
 	{

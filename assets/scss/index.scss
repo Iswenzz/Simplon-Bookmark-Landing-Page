@@ -131,6 +131,10 @@
 		button {
 			width: 80%;
 		}
+
+		@include media(tablet_mobile, portrait) {
+			width: 100%;
+		}
 	}
 }
 

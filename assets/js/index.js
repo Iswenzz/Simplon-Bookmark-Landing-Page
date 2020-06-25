@@ -27,23 +27,8 @@ let waypoints = [
 		offset: '50%'
 	},
 	{
-		query: '#features-header', 
-		classes: 'animate__animated animate__zoomIn',
-		offset: '50%'
-	},
-	{
-		query: '#features-nav', 
-		classes: 'animate__animated animate__zoomIn',
-		offset: '50%'
-	},
-	{
 		query: '#features-1', 
 		classes: 'animate__animated animate__flipInX',
-		offset: '50%'
-	},
-	{
-		query: '#extension-header', 
-		classes: 'animate__animated animate__zoomIn',
 		offset: '50%'
 	},
 	{

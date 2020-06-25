@@ -23,6 +23,18 @@
 		font-weight: 500;
 	}
 
+	a:not(.navbar-brand) {
+		path {
+			transition: 0.2s;
+		}
+
+		&:hover {
+			path {
+				fill: $color-danger;
+			}
+		}
+	}
+
 	#{&}-contact {
 		width: 35%;
 

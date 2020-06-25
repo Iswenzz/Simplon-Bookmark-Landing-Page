@@ -18,7 +18,7 @@
 <body>
 	<!-- NavBar -->
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-white mt-5">
+		<nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white mt-5">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
 					<img width="140" height="24" src="assets/images/logo-bookmark.svg" class="d-inline-block" 
@@ -87,10 +87,10 @@
 		<!-- Simple Bookmark Intro -->
 		<section class="container bookmark-intro">
 			<div class="row">
-				<section class="col-md-6 order-md-1 py-3 blue-round-right animate__animated animate__fadeInRight">
+				<section id="bookmark-intro-right" class="col-md-6 order-md-1 py-3 blue-round-right">
 					<img class="img-fluid" src="assets/images/illustration-hero.svg">
 				</section>
-				<section class="col-md-6 mt-5 py-3 animate__animated animate__fadeInLeft">
+				<section id="bookmark-intro-left" class="col-md-6 mt-5 py-3">
 					<h1>A Simple Bookmark Manager</h1>
 					<h3 class="my-4">
 						A clean and simple interface to organize your favourite websites. 
@@ -106,7 +106,7 @@
 
 		<!-- Features -->
 		<article class="container features my-5">
-			<header>
+			<header id="features-header">
 				<h2 class="text-center">Features</h2>
 				<h3 class="text-center my-4 mx-auto">
 					Our aim is to make it quick and easy for you to access your favourite websites.
@@ -114,7 +114,7 @@
 				</h3>
 			</header>
 			<!-- Tabs -->
-			<nav class="nav row features-row mx-auto mt-5" id="nav-tab" role="tablist">
+			<nav id="features-nav" class="nav row features-row mx-auto mt-5" id="nav-tab" role="tablist">
 				<a class="nav-item nav-link col-lg-4 col-md-12 p-0 active" id="features-1-tab" data-toggle="tab" 
 				href="#features-1" role="tab" aria-controls="features-1" aria-selected="true">
 					<hr class="b-sm"/>
@@ -146,7 +146,7 @@
 			</nav>
 			<!-- Content -->
 			<section class="tab-content" id="nav-tabContent">
-				<div class="tab-pane animate__animated animate__flipInX show active" id="features-1" 
+				<div class="tab-pane show active" id="features-1" 
 				role="tabpanel" aria-labelledby="features-1-tab">
 					<div class="row my-5">
 						<div class="col-md-7 py-3 blue-round-left">
@@ -205,14 +205,14 @@
 
 		<!-- Extensions -->
 		<article class="container extension py-5">
-			<header class="py-5">
+			<header id="extension-header" class="py-5">
 				<h2 class="text-center">Download the extension</h2>
 				<h3 class="text-center my-4 mx-auto">
 					We-ve got more browsers in the pipeline. Please do let us know if you've got a
 					favourite you'd like us to prioritize.
 				</h3>
 			</header>
-			<section class="container browser justify-content-center">
+			<section id="browser-section" class="container browser justify-content-center">
 				<div class="row browser-row mx-auto">
 					<div class="col-lg-4 col-md-12 my-3 align-self-lg-start align-self-md-center">
 						<div class="browser-card mx-auto d-flex flex-column jutify-content-center align-items-center">
@@ -246,7 +246,7 @@
 		</article>
 
 		<!-- FAQ -->
-		<article class="container faq my-5 py-5">
+		<article id="faq-section" class="container faq my-5 py-5">
 			<header class="py-5">
 				<h2 class="text-center">Frequently Asked Questions</h2>
 				<h3 class="text-center my-4 mx-auto">
@@ -427,8 +427,13 @@
 		</section>
 	</footer>
 </body>
-<!-- Bootstrap & JQuery & Popper -->
+<!-- Bootstrap & JQuery & Popper & Waypoints -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+<!-- JS -->
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/footer.js"></script>
 </html>

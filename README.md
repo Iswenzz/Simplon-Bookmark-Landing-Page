@@ -1,8 +1,6 @@
-![](https://i.imgur.com/XFvRaaO.png)
-# Simplon HTML CSS TP
-
+# Simplon Bookmark Landing Page
 ![](https://i.imgur.com/xGwJ3oM.jpg)
-## Bookmark landing page
+
 Intégration en HTML et CSS d'une landing page depuis une maquette graphique complexe.
 Livrables
 Les fichiers HTML et CSS d'intégration de la maquette graphique. Ces fichiers devront être envoyés sur un dépôt Gitlab.
